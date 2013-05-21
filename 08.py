@@ -45,7 +45,7 @@ import bz2
 import re
 import urllib2
 
-pcurl = 'http://www.pythonchallenge.com/pc/def/'
+pcurl = 'http://www.pythonchallenge.com/pc/return/'
 url = 'http://www.pythonchallenge.com/pc/def/integrity.html'
 
 page = urllib2.urlopen(url)
