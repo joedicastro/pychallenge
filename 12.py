@@ -106,4 +106,4 @@ for image, raw_data in hidden_images.items():
             out.write(raw_data)
 
 # the word in the images is 'disproportional'
-print "The next img_url is {0}{1}.html".format(pcurl, 'disproportional')
+print "The next url is {0}{1}.html".format(pcurl, 'disproportional')

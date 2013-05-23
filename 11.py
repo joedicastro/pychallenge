@@ -50,4 +50,4 @@ image.show()
 image.save('cave.png')
 
 # the image shows the word 'evil'
-print "The next img_url is {0}{1}.html".format(pcurl, 'evil')
+print "The next url is {0}{1}.html".format(pcurl, 'evil')
