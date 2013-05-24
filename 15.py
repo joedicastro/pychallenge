@@ -22,9 +22,8 @@ in the html source:
 
 """
 
-import base64
+
 import calendar
-import urllib2
 
 
 pcurl = 'http://www.pythonchallenge.com/pc/return/'
@@ -36,7 +35,7 @@ for year in xrange(2005, 1, -1):
     if calendar.weekday(year, 1, 26) == 0:
         if str(year)[-1] == '6' and str(year)[0] == '1':
             if calendar.isleap(year):
-                 years.append(year)
+                years.append(year)
 
 # Following the hints, tomorrow of the second youngest year is:
 print "The day is 27 January {0}\n".format(years[1])
