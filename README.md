@@ -10,7 +10,7 @@ tenacity to solve them.
 
 ## About this repository
 
-There is my attempt to solve all the levels of this challenge, using the
+This is my attempt to solve all the levels of this challenge, using the
 python language. The target is to solve as many as I can.
 
 ## About Cheating
