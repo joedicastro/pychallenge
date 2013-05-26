@@ -31,8 +31,10 @@ In the html source we have this message:
 #
 import base64
 import difflib
+import Image
 import gzip
 import urllib2
+from cStringIO import StringIO
 
 
 pcurl = 'http://www.pythonchallenge.com/pc/'
@@ -53,12 +55,8 @@ with gzip.open('deltas.gz') as gz_file_content:
 # let's get the data from each column
 column_a, column_b = [], []
 for line in deltas:
-    split = line.split('  ')
-    if len(split) == 2:
-        column_a.append(split[0])
-        column_b.append(split[1].lstrip())
-    elif len(split) == 1:
-        column_b.append(split[0].lstrip())
+    column_a.append(line[:53])
+    column_b.append(line[56:])
 
 # following the hints, let's compare the two columns
 differ = difflib.Differ()
@@ -78,8 +76,9 @@ for line in diff:
 # now, to convert each data stream in a valid file and save it
 for k, v in data.items():
     binary_data = ''.join(h.decode('hex') for h in v.split())
-    with open('{0}.png'.format(k), 'wb') as out:
-        out.write(binary_data)
+    image = Image.open(StringIO(binary_data))
+    image.show()
+    image.save('{0}.png'.format(k))
 
 # the files say:
 #
