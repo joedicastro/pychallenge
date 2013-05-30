@@ -34,7 +34,7 @@ import zipfile
 import zlib
 from cStringIO import StringIO
 
-pcurl = 'http://www.pythonchallenge.com/pc/'
+pcurl = 'http://www.pythonchallenge.com/pc/hex/'
 img_url = 'http://www.pythonchallenge.com/pc/hex/unreal.jpg'
 
 request = urllib2.Request(img_url)

@@ -27,7 +27,7 @@ import re
 import wave
 from cStringIO import StringIO
 
-pcurl = 'http://www.pythonchallenge.com/pc/'
+pcurl = 'http://www.pythonchallenge.com/pc/hex/'
 url = 'http://www.pythonchallenge.com/pc/hex/bin.html'
 
 request = urllib2.Request(url)
