@@ -3,7 +3,7 @@
 
 """
 Python Challenge
-Level 20
+Level 20 & 21
 Title: go away!
 http://www.pythonchallenge.com/pc/hex/idiot2.html
 

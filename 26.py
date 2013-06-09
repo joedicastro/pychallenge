@@ -3,7 +3,7 @@
 
 """
 Python Challenge
-Level 25
+Level 26
 Title: be a man - apologize!
 http://www.pythonchallenge.com/pc/hex/decent.html
 
